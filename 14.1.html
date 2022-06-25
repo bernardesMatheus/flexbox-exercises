@@ -8,27 +8,23 @@
     <title>Flex</title>
 </head>
 <style>
+    h1{
+        margin-bottom: 50px;
+    }
     .flex-container {
         display: flex;
-        height: 80vh;
-
-        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+        
+        flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
 
         flex-wrap: wrap; 
         align-content: space-around;
     }
 
-    div{
-        /*Determina o tamanho máximo que o elemento irá ocupar*/
-        flex-basis: 35%;
-    }
-
     @media(max-width: 1280px) {
-        .flex-container{
-            margin: 10px;
-        }
         div{
             width: 100px;
             height: 100px;
@@ -49,6 +45,8 @@
         <div></div>
         <div></div>
         <div></div>
+    </section>
+    <section class="flex-container">
         <div></div>
         <div></div>
         <div></div>
